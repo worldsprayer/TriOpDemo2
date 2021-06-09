@@ -44,11 +44,10 @@ input[type="checkbox"].input-validation-error {
 }
 
 .col-icon {
-    float: left;
     position: relative;
     border: 1px solid black;
     height: 90%;
-    width: 5px%;
+    width: 90%;
 }
 
 .col-display {
