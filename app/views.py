@@ -7,10 +7,10 @@ from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.http import HttpResponse, HttpResponseRedirect
+from django_cas_ng import decorators
 
 
-
-def home(request):
+def portal(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
     if request.user.is_authenticated:
@@ -22,7 +22,7 @@ def home(request):
                 'year':datetime.now().year,
              })
     else:
-         return HttpResponseRedirect("accounts/login") 
+         return HttpResponseRedirect("") 
 
     
     
@@ -73,10 +73,7 @@ def index(request: HttpRequest) -> HttpResponse:
 </html>'''
 
     if request.user.is_authenticated:
-        body = """
-        <p>You logged in as <strong>%s</strong>.</p>
-        <p><a href="/accounts/logout">Logout</a></p>
-         """ % request.user.username
+        return HttpResponseRedirect("portal/") 
     else:
         body = '<p><a href="/accounts/login">Login</a></p>'
 

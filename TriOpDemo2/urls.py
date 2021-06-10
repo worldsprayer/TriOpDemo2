@@ -22,12 +22,11 @@ import django_cas_ng.views
 from app import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.index, name='index'),
+    path('portal/', views.portal, name='portal'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
     path('admin/', admin.site.urls),
     path('accounts/login', django_cas_ng.views.LoginView.as_view(), name='cas_ng_login'),
-    path('accounts/logout', django_cas_ng.views.LogoutView.as_view(), name='cas_ng_logout'),
-    path('accounts/login', django_cas_ng.views.LoginView.as_view(), name='login'),
-    path('accounts/logout', django_cas_ng.views.LogoutView.as_view(), name='login'),
+    path('accounts/logout', django_cas_ng.views.LogoutView.as_view(), name='cas_ng_logout')
     ]

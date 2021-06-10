@@ -25,7 +25,7 @@ SECRET_KEY = '5b868707-7cb3-4e6b-95c0-861f3e206c39'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','10.254.254.71','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','10.254.254.171','127.0.0.1','0.0.0.0','hydrogen.trioptech.com']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -59,8 +59,7 @@ AUTHENTICATION_BACKENDS = [
     'django_cas_ng.backends.CASBackend',
 ]
 
-CAS_SERVER_URL = 'https://hydrogen.trioptech.com/auth/'
-CAS_VERSION = '3'
+CAS_SERVER_URL = 'https://auth.hydrogen.trioptech.com/auth/'
 
 ROOT_URLCONF = 'TriOpDemo2.urls'
 
