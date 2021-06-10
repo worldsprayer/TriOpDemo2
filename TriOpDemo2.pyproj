@@ -67,6 +67,7 @@
     <Content Include="app\static\app\images\tot_hor.png" />
     <Content Include="app\static\app\scripts\bootstrap.js" />
     <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="install_requirements.bat" />
     <None Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
     <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />

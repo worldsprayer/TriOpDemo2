@@ -6,7 +6,7 @@ from django.contrib import admin
 from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 
 
 
@@ -22,7 +22,7 @@ def home(request):
                 'year':datetime.now().year,
              })
     else:
-         return HttpResponse('<p>Welcome to <a href="https://djangocas.dev">django-cas-ng</a>.</p><p><a href="/accounts/login">Login</a></p>')
+         return HttpResponseRedirect("accounts/login") 
 
     
     
