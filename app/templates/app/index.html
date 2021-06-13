@@ -5,17 +5,14 @@
 
 
 <div class="row" style="margin-top: 20px; text-align: center">
-    <nav class="col-icon">
-        <p>
-            ICONS
-            <ul id="icons" style="list-style-type: none; margin:auto; text-align:center; padding-left:0">
-                <li><input type="image" onclick=qB() src="{% static 'app/images/quickbooks.png' %}" style="width:150px;height:150px;"/>Go</li>
-                <li> <input type="image" onclick=eX() src="{% static 'app/images/excel.png' %}" style="width:150px;height:150px;"/></li>
-                <li> <input type="image" onclick=fI() src="{% static 'app/images/file.png' %}" style="width:150px;height:150px;"/></li>                
-            </ul>
-        </p>
-    </nav>
-    
+        <ul id="icons" style="list-style-type: none; margin:auto; text-align:center; padding-left:0">
+            <li><input type="image" onclick=qB() src="{% static 'app/images/quickbooks.png' %}" style="width:150px;height:150px;"/><input type="image" onclick=eX() src="{% static 'app/images/excel.png' %}" style="width:150px;height:150px;"/><input type="image" onclick=fI() src="{% static 'app/images/explorer.png' %}" style="width:150px;height:150px;"/></li>
+            <li><input type="image" onclick=pP() src="{% static 'app/images/ppt.png' %}" style="width:150px;height:150px;"/><input type="image" onclick=wO() src="{% static 'app/images/word.png' %}" style="width:150px;height:150px;"/></li>                
+        </ul>
+</div>
+
+<div class="tot-footer">
+    <span class="lightButtonFooter">Powered by <a href="https://www.trioptech.com">TriOptimum Technologies</a></span>
 </div>
 
 <script type="text/javascript">
@@ -30,6 +27,8 @@ function go3() {
     var qbWnd;
     var exWnd;
     var fiWnd;
+    var wdWnd;
+    var ppWnd;
     function qB(url) {
     if(qbWnd == undefined)
         qbWnd = window.open("https://pathway.hydrogen.trioptech.com/#/client/NwBjAG15c3Fs",'myFrame');
@@ -47,6 +46,18 @@ function go3() {
         fiWnd = window.open("https://pathway.hydrogen.trioptech.com/#/client/NABjAG15c3Fs",'myFrame3');
     else
         fiWnd.focus();
+    }
+    function wO(url) {
+    if(wdWnd == undefined)
+        wdWnd = window.open("https://pathway.hydrogen.trioptech.com/#/client/NQBjAG15c3Fs",'myFrame4');
+    else
+        wdWnd.focus();
+    }
+    function pP(url) {
+    if(ppWnd == undefined)
+        ppWnd = window.open("https://pathway.hydrogen.trioptech.com/#/client/OQBjAG15c3Fs",'myFrame3');
+    else
+        ppWnd.focus();
     }
 </script> 
 

@@ -9,6 +9,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+    margin-top:150px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -59,7 +60,7 @@ input[type="checkbox"].input-validation-error {
 }
 
 .row {
-    height: 90vh;
+    height: 50vh;
     width: 100%;
 }
 

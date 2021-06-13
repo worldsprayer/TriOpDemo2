@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5b868707-7cb3-4e6b-95c0-861f3e206c39'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost','10.254.254.171','127.0.0.1','0.0.0.0','hydrogen.trioptech.com']
 
